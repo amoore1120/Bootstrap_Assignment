@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- reg meta tag -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <!--    bootstrap responsive meta tag: Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. 
+        To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your <head>.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Bootstrap Assignment</title>
+
+    <!-- CSS Copy-paste the stylesheet <link> into your <head> before all other stylesheets to load our CSS.  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- 
+        #1 place a div with the class container in your body
+    -->
+    <div class="container-1">
+
+        <!-- 
+        2. inside your container div place a div with the class row 
+        -->
+        <div class="row">
+            <!-- #3
+            inside your row div place a primary, secondary, success, danger, warning, info, light, dark, and Link button. In each button the text should read "primary button", "Secondary Button", etc...
+            -->
+            
+            <!-- #4
+            Lets layout your buttons by making them into a 3x3 grid. Place each button in a div with the class of col-4. There are 12 columns in bootstrap so giving each button four columns, will mean there are three buttons in each row.  
+            <div class="col-4"></div> wrapped around each button
+            -->
+
+            <!-- #5
+            Now we have a three by three grid of buttons, but they're too close together and look ugly! Use bootstrap classes to fix this by adding width-auto to all your buttons to auto-size the buttons, and then add m-2 to add a margin of two to each button. You will also need to add w-100 to the class of each button so that the third button does not wrap around to the next row.
+        -->
+            <div class="col-4">
+                <button type="button" class="btn btn-primary w-auto m-2">Primary</button>
+            </div>
+            <div class="col-4">
+                <button type="button" class="btn btn-secondary w-auto m-2 ">Secondary</button>
+            </div>
+            <div class="col-4">
+                <button type="button" class="btn btn-success w-auto m-2">Success</button>
+            </div>
+            <div class="col-4">
+                <button type="button" class="btn btn-danger w-auto m-2">Danger</button>
+            </div>
+            <div class="col-4">
+                <button type="button" class="btn btn-warning">Warning</button>
+            </div>
+            <div class="col-4">
+                <button type="button" class="btn btn-info w-auto m-2">Info</button>
+            </div>
+            <div class="col-4">
+                <button type="button" class="btn btn-light w-auto m-2">Light</button>
+            </div>
+            <div class="col-4">
+                <button type="button" class="btn btn-dark w-auto m-2">Dark</button>
+            </div>
+            <div class="col-4">
+                <button type="button" class="btn btn-link w-auto m-2 w-100">Link</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-3">
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+    </div>
+    <div class="col-3">
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    </div>
+    <div class="col-3">
+        <button type="button" class="btn btn-outline-success">Success</button>
+    </div>
+    <div class="col-3">
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+    </div>
+    <div class="col-3">
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+    </div>
+    <div class="col-3">
+        <button type="button" class="btn btn-outline-info">Info</button>
+    </div>
+    <div class="col-3">
+        <button type="button" class="btn btn-outline-light">Light</button>
+    </div>
+    <div class="col-3">
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+    </div>
+    <div class="col-3">
+        <button type="button" class="btn btn-outline-link">Link</button>
+    </div>
+</div>
+</div>
+</div>
+
+
+<!--Button tags
+The .btn classes are designed to be used with the <button> element. However, you can also use these classes on <a> or <input> elements (though some browsers may apply a slightly different rendering).
+
+When using button classes on <a> elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a role="button" to appropriately convey their purpose to assistive technologies such as screen readers.  
+--> 
+
+<a class="btn btn-primary" href="#" role="button">Link</a>
+<button class="btn btn-primary" type="submit">Button</button>
+<input class="btn btn-primary" type="button" value="Input">
+<input class="btn btn-primary" type="submit" value="Submit">
+<input class="btn btn-primary" type="reset" value="Reset">
+
+
+
+    <div="container-sm">
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+</div>
+
+
+
+
+
+    <!-- jQuery script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS plugin, must be after Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+<!-- Containers are the most basic layout element in Bootstrap and are required when using our default grid system. Containers are used to contain, pad, and (sometimes) center the content within them. While containers can be nested, most layouts do not require a nested container.
+
+    Bootstrap comes with three different containers:
+
+    1)  container, which sets a max-width at each responsive breakpoint
+    2)  container-fluid, which is width: 100% at all breakpoints
+    3)  container-{breakpoint}, which is width: 100% until the specified breakpoint-->
+
+<!-- All-in-one:     
+        Bootstrap default .container class is a responsive, fixed-width container, meaning its max-width changes at each breakpoint.
+            <div class="container">
+                 Content here
+            </div> 
+    -->
+
+<!-- Fluid
+        Use .container-fluid for a full width container, spanning the entire width of the viewport.
+            <div class="container-fluid">
+                Content here
+            </div> 
+    -->
+
+<!-- Responsive
+    allow you to specify a class that is 100% wide until the specified breakpoint is reached, after which we apply max-widths for each of the higher breakpoints. 
+        example, .container-sm is 100% wide to start until the sm breakpoint is reached, where it will scale up with md, lg, and xl.
+    
+            <div class="container-sm">100% wide until small breakpoint</div>
+            <div class="container-md">100% wide until medium breakpoint</div>
+            <div class="container-lg">100% wide until large breakpoint</div>
+            <div class="container-xl">100% wide until extra large breakpoint</div>
+    -->
+
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>    
+    -->
+
+<!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>    
+    -->
